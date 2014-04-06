@@ -2,7 +2,6 @@ from django.shortcuts import (
     get_object_or_404, redirect, render)
 from django.views.generic import View
 
-
 from .forms import (
     NewsLinkForm, StartupForm, TagForm)
 from .models import Startup, Tag
@@ -22,7 +21,7 @@ class NewsLinkCreate(View):
         bound_form = self.form_class(request.POST)
         if bound_form.is_valid():
             new_newslink = bound_form.save()
-            return redirect(new_newslink)
+            return redirect(new_newslink.startup)
         else:
             return render(
                 request,
