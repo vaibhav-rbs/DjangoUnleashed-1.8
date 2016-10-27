@@ -1,3 +1,10 @@
+#NOTE: THIS SECTION WILL BE CONVERTED INTO A MAKEFILE
+virtualenv --no-site-packages -p /usr/local/bin/python3 ENVS
+source bin/activate
+git clone https://github.com/vaibhav-rbs/DjangoUnleashed-1.8 vb-django-1.8
+pip3 install -r requirements.txt
+#ENDNOTE
+
 # Django Unleashed
 
 This repository holds all of the code for [Django Unleashed](https://Django-Unleashed.com). If you find this code helpful, please buy the book.
