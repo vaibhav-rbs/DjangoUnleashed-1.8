@@ -1,8 +1,10 @@
 #NOTE: THIS SECTION WILL BE CONVERTED INTO A MAKEFILE
+```
 virtualenv --no-site-packages -p /usr/local/bin/python3 ENVS
-source bin/activate
+source ENVS/bin/activate
 git clone https://github.com/vaibhav-rbs/DjangoUnleashed-1.8 vb-django-1.8
 pip3 install -r requirements.txt
+```
 #ENDNOTE
 
 # Django Unleashed
